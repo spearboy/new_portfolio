@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-Thin.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-Thin.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 200;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-ExtraLight.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-Light.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-Regular.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-Medium.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-SemiBold.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-Bold.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 800;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-ExtraBold.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/Pretendard/woff2/Pretendard-Black.woff2") format("woff2"),
+        url("../fonts/Pretendard/woff/Pretendard-Black.woff") format("woff");
+}
+
+html {
+    scroll-behavior: initial;
+    overflow: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    font-family: "Pretendard", sans-serif;
+    background: #000;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding: 1.2rem;
+    overflow: hidden;
+
+    .hero_title-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 32px;
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 7vw;
+            font-weight: bold;
+            line-height: 1;
+            text-align: center;
+
+            @media (max-width: 425px) {
+                font-size: 17vw;
+                letter-spacing: -5px;
+            }
+        }
+    }
+}
+
+#horizontal {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dedede;
+
+    .horizontal__content {
+        display: flex;
+
+        .horizontal__item {
+            border: 1px solid #000;
+
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+
+            .horizontal__num {
+                font-size: 30px;
+                font-weight: 900;
+                width: fit-content;
+                display: flex;
+                margin-right: 50px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.third {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        text-align: center;
+
+        @media (max-width: 425px) {
+            font-size: 4.5vw;
+        }
+    }
+}
