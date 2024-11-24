@@ -32,7 +32,7 @@ section {
     padding: 120px 80px 20px;
 
     @media(max-width:800px) {
-        padding: 120px 30px 20px;
+        padding: 70px 30px 20px;
     }
 }
 
@@ -132,6 +132,7 @@ section {
     left: 0px;
     z-index: 999;
     width: 100vw;
+    height: 100px;
     min-height: 100vh;
     background-color: var(--black-color);
 
@@ -151,6 +152,10 @@ section {
             width: 100%;
             left: 0;
             color: #fff;
+
+            @media(max-width:800px) {
+                font-size: 2rem;
+            }
         }
     }
 }
