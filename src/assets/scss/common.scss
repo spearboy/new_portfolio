@@ -96,6 +96,18 @@ section {
         }
     }
 
+    .logo_fake {
+        font-weight: 600;
+        font-size: 36px;
+        margin-left: auto;
+        visibility: hidden;
+
+        @media(max-width:800px) {
+            display: none;
+        }
+
+    }
+
     nav {
 
         ul {
