@@ -82,6 +82,10 @@ section {
     transform: translateY(-100%);
     background-color: var(--black-color);
 
+    @media(max-width:800px) {
+        height: 50px;
+    }
+
     .logo {
         font-weight: 600;
         font-size: 36px;
@@ -287,6 +291,11 @@ section {
                     width: 400px;
                     height: 320px;
 
+                    @media(max-width:800px) {
+                        width: 300px;
+                        height: 220px;
+                    }
+
                     .cover_image {
                         position: absolute;
                         top: 0px;
@@ -308,11 +317,20 @@ section {
                     max-width: 400px;
                     text-align: left;
 
+                    @media(max-width:800px) {
+                        max-width: 300px;
+                    }
+
                     .title {
                         font-size: 32px;
                         font-weight: 700;
                         line-height: 38.19px;
                         margin-bottom: 8px;
+
+                        @media(max-width:800px) {
+                            font-size: 28px;
+                            line-height: 34.19px;
+                        }
                     }
 
                     .uselang {
@@ -322,6 +340,11 @@ section {
                         letter-spacing: -0.02em;
                         color: var(--gray-color);
                         margin-bottom: 24px;
+
+                        @media(max-width:800px) {
+                            font-size: 14px;
+                            line-height: 17.48px;
+                        }
                     }
 
                     .desc {
@@ -331,6 +354,11 @@ section {
                         letter-spacing: -0.02em;
                         color: var(--gray-color);
                         margin-bottom: 24px;
+
+                        @media(max-width:800px) {
+                            font-size: 14px;
+                            line-height: 17.48px;
+                        }
                     }
 
                     .urltexts {
@@ -352,6 +380,11 @@ section {
                             display: flex;
                             flex-direction: row;
                             align-items: center;
+
+                            @media(max-width:800px) {
+                                font-size: 14px;
+                                line-height: 17.48px;
+                            }
                         }
                     }
                 }
